@@ -1,0 +1,88 @@
+127.0.0.1:6379> ping
+PONG
+127.0.0.1:6379> HSET person id 101
+(integer) 1
+127.0.0.1:6379> HSET person name kyle
+(integer) 0
+127.0.0.1:6379> HSET person age 26
+(integer) 0
+127.0.0.1:6379> HSET social name brindha
+(integer) 0
+127.0.0.1:6379> HSET social relation aunt
+(integer) 0
+127.0.0.1:6379> HSET social placevisit paris
+(integer) 0
+127.0.0.1:6379> HSET  social name1 abi
+(integer) 1
+127.0.0.1:6379> HSET social name2 sindhu
+(integer) 1
+127.0.0.1:6379> HSET social relation1 cousin
+(integer) 1
+127.0.0.1:6379> HSET social relation2 sister
+(integer) 1
+127.0.0.1:6379>  HSET social placevisit1 london
+(integer) 1
+127.0.0.1:6379>  HSET social placevisit2 sweden
+(integer) 1
+127.0.0.1:6379> HSET place pname kolkata
+(integer) 1
+127.0.0.1:6379> HSET place review 3*
+(integer) 1
+127.0.0.1:6379> HSET place cost 10000
+(integer) 1
+127.0.0.1:6379> HSET place days 2
+(integer) 1
+127.0.0.1:6379> HSET invitedfriends num 3
+(integer) 1
+127.0.0.1:6379> HSET invitedfriends name brindha
+(integer) 1
+127.0.0.1:6379> HSET invitedfriends nam1 abi
+(integer) 1
+127.0.0.1:6379> HSET invitedfriends name2 sindhu
+(integer) 1
+127.0.0.1:6379> HGETALL person
+1) "id"
+2) "101"
+3) "name"
+4) "kyle"
+5) "age"
+6) "26"
+127.0.0.1:6379> HGETALL social
+ 1) "name"
+ 2) "brindha"
+ 3) "relation"
+ 4) "aunt"
+ 5) "placevisit"
+ 6) "paris"
+ 7) "name1"
+ 8) "abi"
+ 9) "name2"
+10) "sindhu"
+11) "relation1"
+12) "cousin"
+13) "relation2"
+14) "sister"
+15) "placevisit1"
+16) "london"
+17) "placevisit2"
+18) "sweden"
+127.0.0.1:6379> HGETALL place
+1) "pname"
+2) "kolkata"
+3) "review"
+4) "3*"
+5) "cost"
+6) "10000"
+7) "days"
+8) "2"
+127.0.0.1:6379>  HGETALL invitedfriends
+1) "num"
+2) "3"
+3) "name"
+4) "brindha"
+5) "nam1"
+6) "abi"
+7) "name2"
+8) "sindhu"
+127.0.0.1:6379> SAVE
+OK
