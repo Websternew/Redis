@@ -5,4 +5,10 @@ Entities used in this application
      2)Social
      3)Place
      4)InvitedFriends
+ Attributes to corresponding Entities
+     1)Person{
+          name:String,
+     2)Social
+     3)Place
+     4)InvitedFriends
      
