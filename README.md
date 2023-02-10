@@ -20,4 +20,11 @@ Entities used in this application are
      2)Social {id,name,relation,placevisit}
      3)Place {pname,review,cost,days}
      4)InvitedFriends {num,name}
-     
+
+The data is stored as a hashset with entity name as set names and attribute name as key followed by values .
+
+ Abbreviated terms:
+
+  
+      Pname- place name
+      num- number of members in a trip
